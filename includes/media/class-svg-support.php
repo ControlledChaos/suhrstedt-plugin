@@ -13,7 +13,7 @@
  * @link       https://wordpress.org/plugins/svg-support/
  */
 
-namespace TIMS_Plugin\Includes\Media;
+namespace TimS_Plugin\Includes\Media;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

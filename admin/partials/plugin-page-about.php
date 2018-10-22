@@ -16,7 +16,7 @@
  * @link       Dashicons https://developer.wordpress.org/resource/dashicons/
  */
 
-namespace TIMS_Plugin\Admin\Partials;
+namespace TimS_Plugin\Admin\Partials;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

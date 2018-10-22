@@ -15,7 +15,7 @@
  * @link       https://wordpress.org/plugins/simple-custom-post-order/
  */
 
-namespace TIMS_Plugin\Includes\Post_Types_Taxes;
+namespace TimS_Plugin\Includes\Post_Types_Taxes;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

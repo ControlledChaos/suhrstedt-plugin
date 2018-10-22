@@ -7,7 +7,7 @@
  * @since controlled-chaos 1.0.0
  */
 
-namespace TIMS_Plugin\Fields_Import_Page;
+namespace TimS_Plugin\Fields_Import_Page;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

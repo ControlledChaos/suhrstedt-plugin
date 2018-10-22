@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Suhrstedt;
+namespace TimS_Plugin;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

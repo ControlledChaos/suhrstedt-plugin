@@ -12,7 +12,7 @@
  *             hiding the Development Tools admin page.
  */
 
-namespace TIMS_Plugin\Includes\Tools;
+namespace TimS_Plugin\Includes\Tools;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

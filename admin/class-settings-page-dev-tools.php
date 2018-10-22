@@ -13,7 +13,7 @@
  * @author     Greg Sweet <greg@ccdzine.com>
  */
 
-namespace TIMS_Plugin\Admin;
+namespace TimS_Plugin\Admin;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

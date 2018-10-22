@@ -15,7 +15,7 @@
  * @todo       Modify the icon font.
  */
 
-namespace TIMS_Plugin\Admin;
+namespace TimS_Plugin\Admin;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

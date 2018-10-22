@@ -9,9 +9,9 @@
  * @author     Greg Sweet <greg@ccdzine.com>
  */
 
-namespace TIMS_Plugin\Admin\Partials;
+namespace TimS_Plugin\Admin\Partials;
 
-use TIMS_Plugin\Admin\Partials\Field_Callbacks\Dashboard_Callbacks as Callbacks;
+use TimS_Plugin\Admin\Partials\Field_Callbacks\Dashboard_Callbacks as Callbacks;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

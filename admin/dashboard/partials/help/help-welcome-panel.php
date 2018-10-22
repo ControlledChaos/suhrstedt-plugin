@@ -15,7 +15,7 @@
  *             panel is ready to use.
  */
 
-namespace TIMS_Plugin\Admin\Dashboard\Partials\Help;
+namespace TimS_Plugin\Admin\Dashboard\Partials\Help;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

@@ -7,7 +7,7 @@
  * @since IntegratePress 1.0.0
  */
 
-namespace TIMS_Plugin\Admin\Dashboard;
+namespace TimS_Plugin\Admin\Dashboard;
 
 // Restrict direct access
 if ( ! defined( 'ABSPATH' ) ) exit;
