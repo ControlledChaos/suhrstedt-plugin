@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Project media attachment fields.
  */
-class Alana_Project_Media_Fields {
+class Suhrstedt_Project_Media_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -174,4 +174,4 @@ class Alana_Project_Media_Fields {
 
 }
 
-$tims_plugin_project_media_fields = new Alana_Project_Media_Fields;
+$tims_plugin_project_media_fields = new Suhrstedt_Project_Media_Fields;

@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Basic contact page fields.
  */
-class Alana_Contact_Page_Fields {
+class Suhrstedt_Contact_Page_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -430,4 +430,4 @@ class Alana_Contact_Page_Fields {
 
 }
 
-$tims_plugin_contact_page_fields = new Alana_Contact_Page_Fields;
+$tims_plugin_contact_page_fields = new Suhrstedt_Contact_Page_Fields;

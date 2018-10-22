@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Front page fields.
  */
-class Alana_Front_Page_Fields {
+class Suhrstedt_Front_Page_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -44,4 +44,4 @@ class Alana_Front_Page_Fields {
 
 }
 
-$tims_plugin_front_page_fields = new Alana_Front_Page_Fields;
+$tims_plugin_front_page_fields = new Suhrstedt_Front_Page_Fields;

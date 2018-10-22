@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Film + TV post type fields.
  */
-class Alana_Features {
+class Suhrstedt_Features {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -273,4 +273,4 @@ class Alana_Features {
 
 }
 
-$tims_plugin_features_fields = new Alana_Features;
+$tims_plugin_features_fields = new Suhrstedt_Features;

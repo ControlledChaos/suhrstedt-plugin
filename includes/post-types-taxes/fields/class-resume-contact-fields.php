@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Resume-contact combo page fields.
  */
-class Alana_Resume_Page_Fields {
+class Suhrstedt_Resume_Page_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -557,4 +557,4 @@ class Alana_Resume_Page_Fields {
 
 }
 
-$tims_plugin_resume_page_fields = new Alana_Resume_Page_Fields;
+$tims_plugin_resume_page_fields = new Suhrstedt_Resume_Page_Fields;

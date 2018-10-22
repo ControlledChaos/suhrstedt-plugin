@@ -11,7 +11,7 @@
  *
  * Plugin Name:  Tim Suhrstedt Website
  * Plugin URI:   https://github.com/ControlledChaos/suhrstedt-plugin
- * Description:  Functionality required for the Alana Morshead portfolio site.
+ * Description:  Functionality required for the Tim Suhrstedt portfolio site.
  * Version:      1.0.0
  * Author:       Controlled Chaos Design
  * Author URI:   http://ccdzine.com/

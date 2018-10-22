@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Alana welcome panel.
+ * Suhrstedt welcome panel.
  *
  * @link       http://ccdzine.com
  * @since      1.0.0
@@ -10,7 +10,7 @@
  * @subpackage tims/admin
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

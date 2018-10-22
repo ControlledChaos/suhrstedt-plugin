@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Commercials post type fields.
  */
-class Alana_Commercials_Fields {
+class Suhrstedt_Commercials_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -231,4 +231,4 @@ class Alana_Commercials_Fields {
 
 }
 
-$tims_plugin_commercials_fields = new Alana_Commercials_Fields;
+$tims_plugin_commercials_fields = new Suhrstedt_Commercials_Fields;

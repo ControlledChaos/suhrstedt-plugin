@@ -7,7 +7,7 @@
  * @since tims 1.0.0
  */
 
-namespace Alana;
+namespace Suhrstedt;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Site settings page fields.
  */
-class Alana_Settings_Fields {
+class Suhrstedt_Settings_Fields {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -395,4 +395,4 @@ class Alana_Settings_Fields {
 
 }
 
-$tims_plugin_settings_fields = new Alana_Settings_Fields;
+$tims_plugin_settings_fields = new Suhrstedt_Settings_Fields;
