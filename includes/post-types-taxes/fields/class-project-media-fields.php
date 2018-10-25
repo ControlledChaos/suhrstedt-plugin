@@ -32,7 +32,7 @@ class Suhrstedt_Project_Media_Fields {
     	$this->fields();
 
 	}
-	
+
 	/**
 	 * Register fields.
 	 */
