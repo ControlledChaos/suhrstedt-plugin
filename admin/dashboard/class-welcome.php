@@ -178,7 +178,13 @@ class Welcome {
 	 */
 	public function welcome_panel() {
 
-		include_once TIMS_PATH . 'admin/dashboard/partials/welcome-panel.php';
+		$welcome = locate_template( 'template-parts/admin/welcome-panel.php' );
+
+		if ( ! empty( $welcome ) ) {
+			get_template_part( 'template-parts/admin/welcome-panel' );
+		} else {
+			include_once TIMS_PATH . 'admin/dashboard/partials/welcome-panel.php';
+		}
 
 	}
 
