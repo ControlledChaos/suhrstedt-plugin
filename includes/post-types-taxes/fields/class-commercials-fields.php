@@ -179,7 +179,7 @@ class Suhrstedt_Commercials_Fields {
 							'id'    => '',
 						],
 						'return_format'     => 'array',
-						'preview_size'      => 'Video Small',
+						'preview_size'      => 'video-small',
 						'library'           => 'all',
 						'min_width'         => '',
 						'min_height'        => '',
