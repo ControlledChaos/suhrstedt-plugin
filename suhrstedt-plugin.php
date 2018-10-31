@@ -411,3 +411,57 @@ function tims_settings_links( $links, $file ) {
 
 }
 add_filter( 'plugin_row_meta', 'tims_settings_links', 10, 2 );
+
+/**
+ * Check for Advanced Custom Fields.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return bool Returns true if the ACF free or Pro plugin is active.
+ */
+function tims_acf() {
+
+	if ( class_exists( 'acf' ) ) {
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+/**
+ * Check for Advanced Custom Fields Pro.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return bool Returns true if the ACF Pro plugin is active.
+ */
+function tims_acf_pro() {
+
+	if ( class_exists( 'acf_pro' ) ) {
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+/**
+ * Check for Advanced Custom Fields options page.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return bool Returns true if the ACF free plus the
+ *              Options Page addon or Pro plugin is active.
+ */
+function tims_acf_options() {
+
+	if ( class_exists( 'acf_pro' ) ) {
+		return true;
+	} elseif ( ( class_exists( 'acf' ) && class_exists( 'acf_options_page' ) ) ) {
+		return true;
+	} else {
+		return false;
+	}
+
+}

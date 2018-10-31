@@ -2,6 +2,20 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+/**
+ * Admin header.
+ *
+ * Minimal styles applied to keep margins breaking admin menu layout.
+ */
+.tims-admin-header {
+	padding-top: 1.5em;
+}
+
+.admin-site-title {
+	margin-top: 0;
+}
+
 /**
   * Plugins screens.
   *
@@ -224,7 +238,7 @@ html .backend-tabbed-content .ui-button.ui-state-disabled:hover {
  * Some of the unordered lists in the admin pages
  * look better with bullets.
  */
-.tims_bullet-list {
+.ccp_bullet-list {
 	list-style: disc;
 	margin-left: 1em;
 }

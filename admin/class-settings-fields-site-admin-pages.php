@@ -105,6 +105,21 @@ class Settings_Fields_Site_Admin_Pages {
 			'tims-site-admin-pages'
 		);
 
+		// Use the admin header.
+		add_settings_field(
+			'tims_use_admin_header',
+			__( 'Admin Header', 'tims' ),
+			[ Partials\Field_Callbacks\Admin_Pages_Callbacks::instance(), 'admin_header' ],
+			'tims-site-admin-pages',
+			'tims-site-admin-pages',
+			[ esc_html__( 'Add the site title, site tagline, and a nav menu to the top of admin pages.', 'tims' ) ]
+		);
+
+		register_setting(
+			'tims-site-admin-pages',
+			'tims_use_admin_header'
+		);
+
 		// Use custom sort order.
 		add_settings_field(
 			'tims_use_custom_sort_order',

@@ -58,6 +58,26 @@ class Admin_Pages_Callbacks {
 	public function __construct() {}
 
 	/**
+	 * Use the admin header.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array $args Extra arguments passed into the callback function.
+	 * @return string
+	 */
+	public function admin_header( $args ) {
+
+		$option = get_option( 'tims_use_admin_header' );
+
+		$html = '<p><input type="checkbox" id="tims_use_admin_header" name="tims_use_admin_header" value="1" ' . checked( 1, $option, false ) . '/>';
+
+		$html .= '<label for="tims_use_admin_header"> '  . $args[0] . '</label></p>';
+
+		echo $html;
+
+	}
+
+	/**
 	 * Use custom drag & drop sort order.
 	 *
 	 * @since  1.0.0
