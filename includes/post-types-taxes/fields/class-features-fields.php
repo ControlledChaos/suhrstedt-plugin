@@ -131,7 +131,7 @@ class Suhrstedt_Features {
 						'label'             => __( 'Project Image', 'tims' ),
 						'name'              => 'tims_project_image',
 						'type'              => 'image',
-						'instructions'      => __( 'If no image is selected then the screenshot from Vimeo will be used. Minimum 960 X 540 pixels.', 'tims' ),
+						'instructions'      => __( 'If no image is selected then the screenshot from Vimeo will be used. This can be used to replace an inferior image provided by Vimeo. Minimum 960 X 540 pixels.', 'tims' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
