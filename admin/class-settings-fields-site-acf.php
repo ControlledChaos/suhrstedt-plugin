@@ -670,6 +670,28 @@ final class Settings_Fields_ACF {
 						'endpoint'          => 0,
 					],
 					[
+						'key'               => 'field_5bdc9db7bc35f',
+						'label'             => __( 'Showcase Videos', 'tims' ),
+						'name'              => 'tims_showcase_number',
+						'type'              => 'button_group',
+						'instructions'      => __( '', 'tims' ),
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => [
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						],
+						'choices'           => [
+							6  => __( 'Six', 'tims' ),
+							12 => __( 'Twelve', 'tims' ),
+						],
+						'allow_null'        => 0,
+						'default_value'     => 12,
+						'layout'            => 'horizontal',
+						'return_format'     => 'value',
+					],
+					[
 						'key'               => 'field_5bdb2fd78a66f',
 						'label'             => __( 'Dark Mode', 'tims' ),
 						'name'              => 'tims_dark_mode',
