@@ -77,6 +77,12 @@ final class Init {
 		add_filter( 'contextual_help', [ $this, 'remove_help_tabs' ], 999, 3 );
 		add_filter( 'screen_options_show_screen', [ $this, 'remove_screen_options' ], 10, 2 );
 
+		// Change admin toolbar menu items.
+		add_action( 'admin_bar_menu', [ $this, 'admin_toolbar_menu' ], 70 );
+
+		// Change the Howdy text.
+		add_filter( 'gettext', [ $this, 'change_howdy' ], 10, 3 );
+
 	}
 
 	/**
@@ -193,6 +199,73 @@ final class Init {
 		}
 
 		return true;
+
+	}
+
+	/**
+	 * Change the Howdy text.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  string $translated
+	 * @param  string $text
+	 * @param  string $domain
+	 * @return string
+	 */
+	public function change_howdy( $translated, $text, $domain ) {
+
+		// Replace "Howdy" text.
+		if ( false !== strpos( $translated, 'Howdy' ) ) {
+			return str_replace( 'Howdy', 'Hi', $translated );
+		}
+
+		return $translated;
+
+	}
+
+	/**
+	 * Change admin toolbar menu items.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array $wp_admin_bar
+	 * @return array
+	 */
+	public function admin_toolbar_menu( $wp_admin_bar ) {
+
+		// Remove the site name links.
+		$wp_admin_bar->remove_menu( 'site-name' );
+
+		// URL variables.
+		$admin = admin_url();
+		$home  = home_url();
+
+		// Backend admin toolbar.
+		if ( is_admin() ) {
+
+			// Frontend link from back end.
+			$wp_admin_bar->add_menu( [
+				'id'     => 'frontend-link',
+				'parent' => '0', //puts it on the left-hand side
+				'title'  => __( 'View Site', 'tims' ),
+				'href'   => $home
+			] );
+
+		// Frontend admin toolbar.
+		} else {
+
+			// Remove comments.
+			$wp_admin_bar->remove_menu( 'comments' );
+
+			// Backend link from front end.
+			$wp_admin_bar->add_menu( [
+				'id'     => 'backend-link',
+				'parent' => '0', //puts it on the left-hand side
+				'title'  => __( 'Dashboard', 'tims' ),
+				'href'   => $admin
+			] );
+
+		}
 
 	}
 
