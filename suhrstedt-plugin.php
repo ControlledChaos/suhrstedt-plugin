@@ -174,7 +174,7 @@ final class Tim_Suhrstedt {
 		if ( ! defined( 'TIMS_DEFAULT_META_IMAGE' ) ) {
 			define(
 				'TIMS_DEFAULT_META_IMAGE',
-				plugins_url( 'frontend/assets/images/default-meta-image.jpg', __FILE__ )
+				plugins_url( 'frontend/assets/images/tims-meta-image.jpg', __FILE__ )
 			);
 		}
 
