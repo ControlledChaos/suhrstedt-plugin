@@ -700,7 +700,7 @@ final class Settings_Fields_ACF {
 						'label'             => __( 'Showcase Number', 'tims' ),
 						'name'              => 'tims_showcase_number',
 						'type'              => 'button_group',
-						'instructions'      => __( 'Select the number of projects to be presented in the showcase.', 'tims' ),
+						'instructions'      => __( 'Select the number of projects to be presented in the showcase. If you change this number, save the settings to get the correct number of projects below.', 'tims' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
