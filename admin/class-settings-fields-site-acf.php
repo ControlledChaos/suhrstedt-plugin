@@ -71,7 +71,7 @@ final class Settings_Fields_ACF {
 		if ( $showcase ) {
 			$showcase = $showcase;
 		} else {
-			$showcase = 6;
+			$showcase = 9;
 		}
 
 		if ( function_exists( 'acf_add_local_field_group' ) ) :
@@ -710,10 +710,11 @@ final class Settings_Fields_ACF {
 						],
 						'choices'           => [
 							6  => __( 'Six', 'tims' ),
+							9  => __( 'Nine', 'tims' ),
 							12 => __( 'Twelve', 'tims' ),
 						],
 						'allow_null'        => 0,
-						'default_value'     => 12,
+						'default_value'     => 9,
 						'layout'            => 'horizontal',
 						'return_format'     => 'value',
 					],
