@@ -732,8 +732,8 @@ final class Settings_Fields_ACF {
 							'id'    => '',
 						],
 						'collapsed'         => 'field_5be1d8c9c431b',
-						'min'               => 0,
-						'max'               => 0,
+						'min'               => $showcase,
+						'max'               => $showcase,
 						'layout'            => 'row',
 						'button_label'      => '',
 						'sub_fields'        => [
