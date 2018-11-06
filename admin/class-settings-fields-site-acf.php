@@ -67,6 +67,13 @@ final class Settings_Fields_ACF {
 	 */
 	public function settings_fields() {
 
+		$showcase = get_field( 'tims_showcase_number', 'option' );
+		if ( $showcase ) {
+			$showcase = $showcase;
+		} else {
+			$showcase = 6;
+		}
+
 		if ( function_exists( 'acf_add_local_field_group' ) ) :
 
 			acf_add_local_field_group( [
@@ -670,28 +677,6 @@ final class Settings_Fields_ACF {
 						'endpoint'          => 0,
 					],
 					[
-						'key'               => 'field_5bdc9db7bc35f',
-						'label'             => __( 'Showcase Videos', 'tims' ),
-						'name'              => 'tims_showcase_number',
-						'type'              => 'button_group',
-						'instructions'      => __( '', 'tims' ),
-						'required'          => 0,
-						'conditional_logic' => 0,
-						'wrapper'           => [
-							'width' => '',
-							'class' => '',
-							'id'    => '',
-						],
-						'choices'           => [
-							6  => __( 'Six', 'tims' ),
-							12 => __( 'Twelve', 'tims' ),
-						],
-						'allow_null'        => 0,
-						'default_value'     => 12,
-						'layout'            => 'horizontal',
-						'return_format'     => 'value',
-					],
-					[
 						'key'               => 'field_5bdca15e2d2e3',
 						'label'             => __( 'Showcase Heading', 'tims' ),
 						'name'              => 'tims_showcase_heading',
@@ -709,6 +694,72 @@ final class Settings_Fields_ACF {
 						'prepend'           => '',
 						'append'            => '',
 						'maxlength'         => '',
+					],
+					[
+						'key'               => 'field_5bdc9db7bc35f',
+						'label'             => __( 'Showcase Number', 'tims' ),
+						'name'              => 'tims_showcase_number',
+						'type'              => 'button_group',
+						'instructions'      => __( 'Select the number of projects to be presented in the showcase.', 'tims' ),
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => [
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						],
+						'choices'           => [
+							6  => __( 'Six', 'tims' ),
+							12 => __( 'Twelve', 'tims' ),
+						],
+						'allow_null'        => 0,
+						'default_value'     => 12,
+						'layout'            => 'horizontal',
+						'return_format'     => 'value',
+					],
+					[
+						'key'               => 'field_5be1ad28ff352',
+						'label'             => __( 'Showcase Projects', 'tims' ),
+						'name'              => 'tims_showcase_projects',
+						'type'              => 'repeater',
+						'instructions'      => __( '', 'tims' ),
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => [
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						],
+						'collapsed'         => 'field_5be1adfcff353',
+						'min'               => $showcase,
+						'max'               => $showcase,
+						'layout'            => 'row',
+						'button_label'      => __( 'Add Project', 'tims' ),
+						'sub_fields'        => [
+							[
+								'key'               => 'field_5be1adfcff353',
+								'label'             => 'Project',
+								'name'              => 'tims_showcase_project',
+								'type'              => 'post_object',
+								'instructions'      => '',
+								'required'          => 0,
+								'conditional_logic' => 0,
+								'wrapper'           => [
+									'width' => '',
+									'class' => '',
+									'id'    => '',
+								],
+								'post_type'         => [
+									0 => 'tims_features',
+									1 => 'tims_commercials',
+								],
+								'taxonomy'          => '',
+								'allow_null'        => 0,
+								'multiple'          => 0,
+								'return_format'     => 'id',
+								'ui'                => 1,
+							],
+						],
 					],
 					[
 						'key'               => 'field_5bdb2fd78a66f',
