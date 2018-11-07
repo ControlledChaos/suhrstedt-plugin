@@ -63,6 +63,27 @@ $tabs = [
         esc_html__( 'Introduction', 'tims' )
 	),
 
+	// Media Library tab.
+    sprintf(
+        '<li><a href="%1s"><span class="dashicons dashicons-admin-media"></span> %2s</a></li>',
+        '#media',
+        esc_html__( 'Media Library', 'tims' )
+    ),
+
+	// Features tab.
+    sprintf(
+        '<li><a href="%1s"><span class="dashicons dashicons-format-video"></span> %2s</a></li>',
+        '#features',
+        esc_html__( 'Features', 'tims' )
+	),
+
+	// Commercials tab.
+    sprintf(
+        '<li><a href="%1s"><span class="dashicons dashicons-megaphone"></span> %2s</a></li>',
+        '#commercials',
+        esc_html__( 'Commercials', 'tims' )
+	),
+
 	// Site Settings tab.
     sprintf(
         '<li><a href="%1s"><span class="dashicons %2s"></span> %3s</a></li>',
@@ -70,27 +91,6 @@ $tabs = [
 		esc_attr( $settings ),
         esc_html__( 'Site Settings', 'tims' )
 	),
-
-	// Script Options tab.
-    sprintf(
-        '<li><a href="%1s"><span class="dashicons dashicons-editor-code"></span> %2s</a></li>',
-        '#scripts',
-        esc_html__( 'Script Options', 'tims' )
-	),
-
-	// Media Options tab.
-    sprintf(
-        '<li><a href="%1s"><span class="dashicons dashicons-admin-media"></span> %2s</a></li>',
-        '#media',
-        esc_html__( 'Media Options', 'tims' )
-	),
-
-	// Dev Tools tab.
-    sprintf(
-        '<li><a href="%1s"><span class="dashicons dashicons-welcome-learn-more"></span> %2s</a></li>',
-        '#tools',
-        esc_html__( 'Development Tools', 'tims' )
-    ),
 
 ];
 
@@ -101,9 +101,9 @@ $page_tabs = apply_filters( 'tims_tabs_page_about', $tabs );
 <!-- Default WordPress page wrapper -->
 <div class="wrap site-plugin-wrap">
 	<!-- Page heading -->
-	<?php echo sprintf( '<h1 class="wp-heading-inline">%1s %2s</h1>', get_bloginfo( 'name' ), esc_html__( 'Plugin', 'tims' ) ); ?>
+	<?php echo sprintf( '<h1 class="wp-heading-inline">%1s</h1>', esc_html__( 'How to Manage Your Website', 'tims' ) ); ?>
 	<!-- Page description -->
-    <p class="description"><?php esc_html_e( 'A feature-packed WordPress starter plugin for building custom-tailored websites.', 'tims' ); ?></p>
+    <p class="description"><?php esc_html_e( 'The following instructions will help you keep your portfolio up to date and looking good.', 'tims' ); ?></p>
 	<!-- Ornamental divider -->
 	<hr class="wp-header-end">
 	<!-- Begin jQuery tabbed content -->
@@ -117,17 +117,17 @@ $page_tabs = apply_filters( 'tims_tabs_page_about', $tabs );
 		<div id="intro"><!-- Introduction content -->
 			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-intro.php'; ?>
 		</div>
+		<div id="media"><!-- Media Options content -->
+			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-media.php'; ?>
+		</div>
+		<div id="features"><!-- Script Options content -->
+			<?php include_once TIMS_PATH . 'admin/partials//plugin-page-features.php'; ?>
+		</div>
+		<div id="commercials"><!-- Dev Tools content -->
+			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-commercials.php'; ?>
+		</div>
 		<div id="settings"><!-- Site Settings content -->
 			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-site-settings.php'; ?>
-		</div>
-		<div id="scripts"><!-- Script Options content -->
-			<?php include_once TIMS_PATH . 'admin/partials//plugin-page-script-options.php'; ?>
-		</div>
-		<div id="media"><!-- Media Options content -->
-			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-media-options.php'; ?>
-		</div>
-		<div id="tools"><!-- Dev Tools content -->
-			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-dev-tools.php'; ?>
 		</div>
 		<?php // Hook for adding tabbed content.
 		do_action( 'tims_content_page_about_after' ); ?>

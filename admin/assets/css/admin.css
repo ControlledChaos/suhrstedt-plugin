@@ -151,8 +151,8 @@ html .backend-tabbed-content .ui-button.ui-state-disabled:hover {
 	padding: 5px 10px;
 	font-size: 14px;
 	line-height: 24px;
-	background: #e5e5e5;
-	color: #555;
+	background: #f1f1f1;
+	color: #666;
 	text-decoration: none;
 }
 
@@ -165,11 +165,11 @@ html .backend-tabbed-content .ui-button.ui-state-disabled:hover {
 .backend-tabbed-content.ui-tabs .ui-tabs-nav li.ui-tabs-active a:focus:active,
 .backend-tabbed-content.ui-tabs .ui-tabs-nav li.ui-tabs-active a:active,
 .backend-tabbed-content.ui-tabs .ui-tabs-nav li.ui-tabs-active a:hover {
-	border-bottom: 1px solid #f1f1f1;
-	background: #f1f1f1;
+	border-bottom: 1px solid #fff;
+	background: #fff;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: #000;
+	color: #444;
 }
 
 .backend-tabbed-content.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,

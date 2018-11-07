@@ -21,9 +21,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
 <!-- Tabbed content heading -->
-<h2><?php _e( 'Plugin Overview', 'tims' ); ?></h2>
+<h2><?php _e( 'Overview', 'tims' ); ?></h2>
 
-<p><?php _e( 'This is a tool — a means to an end. But it can be used as is without further development.', 'tims' ); ?></p>
+<?php echo sprintf( '<p>This website, including a custom WordPress plugin and a custom WordPress theme, were designed and built specifically for Tim Suhrstedt by Greg Sweet of <a href="%1s" target="_blank">Controlled Chaos Design</a>. Please feel free to ask for help at any time.</p>', esc_url( 'http://ccdzine.com/' ) ); ?>
 
 <!-- Section heading -->
 <h3><?php _e( 'Introduction', 'tims' ); ?></h3>
