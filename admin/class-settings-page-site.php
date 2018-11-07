@@ -139,7 +139,7 @@ class Settings_Page_Site {
 
 				// Page arguments.
 				$settings = apply_filters( 'controlled_chaos_site_settings_page_top', [
-					'page_title' => $title . __( ' Settings', 'tims' ),
+					'page_title' => __( 'Website Settings', 'tims' ),
 					'menu_title' => $label,
 					'menu_slug'  => TIMS_ADMIN_SLUG . '-settings',
 					'icon_url'   => $icon,
@@ -161,7 +161,7 @@ class Settings_Page_Site {
 			} else {
 
 				$settings = apply_filters( 'controlled_chaos_site_settings_page_default', [
-					'page_title' => $title . __( ' Settings', 'tims' ),
+					'page_title' => __( 'Website Settings', 'tims' ),
 					'menu_title' => $label,
 					'menu_slug'  => TIMS_ADMIN_SLUG . '-settings',
 					'parent'     => 'index.php',

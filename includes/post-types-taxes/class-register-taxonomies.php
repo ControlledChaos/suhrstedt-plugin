@@ -52,7 +52,7 @@ final class Taxonomies_Register {
         $labels = [
             'name'                       => __( 'Media Types', 'tims' ),
             'singular_name'              => __( 'Media Type', 'tims' ),
-            'menu_name'                  => __( 'Media Type', 'tims' ),
+            'menu_name'                  => __( 'Media Types', 'tims' ),
             'all_items'                  => __( 'All Media Types', 'tims' ),
             'edit_item'                  => __( 'Edit Media Type', 'tims' ),
             'view_item'                  => __( 'View Media Type', 'tims' ),

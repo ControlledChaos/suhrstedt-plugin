@@ -68,6 +68,13 @@ $tabs = [
         '<li><a href="%1s"><span class="dashicons dashicons-admin-media"></span> %2s</a></li>',
         '#media',
         esc_html__( 'Media Library', 'tims' )
+	),
+
+	// Vimeo tab.
+    sprintf(
+        '<li><a href="%1s"><span class="dashicons dashicons-video-alt3"></span> %2s</a></li>',
+        '#vimeo',
+        esc_html__( 'Vimeo', 'tims' )
     ),
 
 	// Features tab.
@@ -119,6 +126,9 @@ $page_tabs = apply_filters( 'tims_tabs_page_about', $tabs );
 		</div>
 		<div id="media"><!-- Media Options content -->
 			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-media.php'; ?>
+		</div>
+		<div id="vimeo"><!-- Media Options content -->
+			<?php include_once TIMS_PATH . 'admin/partials/plugin-page-vimeo.php'; ?>
 		</div>
 		<div id="features"><!-- Script Options content -->
 			<?php include_once TIMS_PATH . 'admin/partials//plugin-page-features.php'; ?>

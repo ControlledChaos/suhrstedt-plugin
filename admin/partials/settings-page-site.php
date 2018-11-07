@@ -138,9 +138,8 @@ $button = apply_filters( 'tims_save_site_settings', $save );
 ?>
 <div class="wrap">
 	<?php echo sprintf(
-        '<h1 class="wp-heading-inline">%1s %2s</h1>',
-        get_bloginfo( 'name' ),
-        esc_html__( 'Settings', 'tims' )
+        '<h1 class="wp-heading-inline">%1s</h1>',
+        esc_html__( 'Website Settings', 'tims' )
     ); ?>
     <p class="description"><?php esc_html_e( 'Customize the way WordPress is used.', 'tims' ); ?></p>
     <hr class="wp-header-end">

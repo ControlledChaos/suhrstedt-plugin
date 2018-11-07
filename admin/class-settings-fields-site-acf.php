@@ -324,7 +324,7 @@ final class Settings_Fields_ACF {
 						'label'             => __( 'Settings Page', 'tims' ),
 						'name'              => 'tims_settings_link_position',
 						'type'              => 'button_group',
-						'instructions'      => __( 'Select the position of this Settings page link, and whether to show or hide the other settings links.', 'tims' ),
+						'instructions'      => __( 'Show only the basic settings or expose the advanced settings. Use the advanced settings with caution or contact Controlled Chaos Design for help.', 'tims' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -333,8 +333,8 @@ final class Settings_Fields_ACF {
 							'id'    => '',
 						],
 						'choices'           => [
-							'default' => __( 'Default/Show', 'tims' ),
-							'top'     => __( 'Top Level/Hide', 'tims' ),
+							'top'     => __( 'Basic', 'tims' ),
+							'default' => __( 'Advanced', 'tims' ),
 						],
 						'allow_null'        => 0,
 						'default_value'     => 'default',
@@ -343,7 +343,7 @@ final class Settings_Fields_ACF {
 					],
 					[
 						'key'               => 'field_5aad41ffad3e6',
-						'label'             => __( 'Site Settings Label', 'tims' ),
+						'label'             => __( 'Settings Page Label', 'tims' ),
 						'name'              => 'tims_site_settings_link_label',
 						'type'              => 'text',
 						'instructions'      => __( 'Change the label of the link to this page.', 'tims' ),
@@ -362,7 +362,7 @@ final class Settings_Fields_ACF {
 					],
 					[
 						'key'               => 'field_5b4809a3f4f0b',
-						'label'             => __( 'Site Settings Icon', 'tims' ),
+						'label'             => __( 'Settings Page Icon', 'tims' ),
 						'name'              => 'tims_site_settings_link_icon',
 						'type'              => 'text',
 						'instructions'      => __( 'Enter a Dashicons CSS class for the icon of the link to this page.', 'tims' ),
@@ -381,10 +381,10 @@ final class Settings_Fields_ACF {
 					],
 					[
 						'key'               => 'field_5b480aa335a20',
-						'label'             => __( 'Site Plugin Position', 'tims' ),
+						'label'             => __( 'Instructions Page', 'tims' ),
 						'name'              => 'tims_site_plugin_link_position',
 						'type'              => 'button_group',
-						'instructions'      => __( 'Make the site-specific plugin admin page a top-level link.', 'tims' ),
+						'instructions'      => __( 'Make the instructions page a top-level link or keep it under the plugins tab.', 'tims' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -393,8 +393,8 @@ final class Settings_Fields_ACF {
 							'id'    => '',
 						],
 						'choices'           => [
-							'default' => __( 'Under Plugins', 'tims' ),
 							'top'     => __( 'Top Level', 'tims' ),
+							'default' => __( 'Under Plugins', 'tims' ),
 						],
 						'allow_null'        => 0,
 						'default_value'     => 'default',
@@ -403,7 +403,7 @@ final class Settings_Fields_ACF {
 					],
 					[
 						'key'               => 'field_5b480b0d35a21',
-						'label'             => __( 'Site Plugin Label', 'tims' ),
+						'label'             => __( 'Instructions Page Label', 'tims' ),
 						'name'              => 'tims_site_plugin_link_label',
 						'type'              => 'text',
 						'instructions'      => __( 'Change the label of the link to this page.', 'tims' ),
@@ -422,7 +422,7 @@ final class Settings_Fields_ACF {
 					],
 					[
 						'key'               => 'field_5b480b4f35a22',
-						'label'             => __( 'Site Plugin Icon', 'tims' ),
+						'label'             => __( 'Instructions Page Icon', 'tims' ),
 						'name'              => 'tims_site_plugin_link_icon',
 						'type'              => 'text',
 						'instructions'      => __( 'Enter a Dashicons CSS class for the icon of the link to this page.', 'tims' ),

@@ -1,6 +1,6 @@
 <?php
 /**
- * About page script options output.
+ * Instructions page script options output.
  *
  * Uses the universal slug partial for admin pages. Set this
  * slug in the core plugin file.
@@ -18,7 +18,7 @@ namespace TimS_Plugin\Admin\Partials;
 if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
-<h3><?php _e( 'Script Inclusion and Loading', 'tims' ); ?></h3>
+<h3><?php _e( 'Features Overview', 'tims' ); ?></h3>
 <?php echo sprintf(
 	'<p>%1s <a href="%2s">%3s</a> %4s</p>',
 	__( 'This plugin is equipped with', 'tims' ),
