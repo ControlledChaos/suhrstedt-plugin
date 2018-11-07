@@ -21,64 +21,20 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
 <!-- Tabbed content heading -->
-<h2><?php _e( 'Overview', 'tims' ); ?></h2>
+<h2><?php _e( 'Website Overview', 'tims' ); ?></h2>
 
-<?php echo sprintf( '<p>This website, including a custom WordPress plugin and a custom WordPress theme, were designed and built specifically for Tim Suhrstedt by Greg Sweet of <a href="%1s" target="_blank">Controlled Chaos Design</a>. Please feel free to ask for help at any time.</p>', esc_url( 'http://ccdzine.com/' ) ); ?>
+<?php echo sprintf( '<p>This website, including a custom WordPress plugin and a custom WordPress theme, were designed and built specifically for the Tim Suhrstedt portfolio by Greg Sweet of <a href="%1s" target="_blank">Controlled Chaos Design</a>.</p>', esc_url( 'http://ccdzine.com/' ) ); ?>
+<p><?php _e( 'Please feel free to ask for help at any time.', 'tims' ); ?></p>
 
 <!-- Section heading -->
 <h3><?php _e( 'Introduction', 'tims' ); ?></h3>
 
-<?php echo sprintf(
-	'<p>%1s <a href="%2s" target="_blank">Controlled Chaos Design</a>.</p>',
-	__( 'Howdy, folks. My name is Greg Sweet. I am sole proprietor, chief cook and bottle washer at', 'tims' ),
-	esc_url( 'http://ccdzine.com/' )
-); ?>
-<?php echo sprintf(
-	'<p>%1s <a href="%2s" target="_blank">%3s</a>%4s</p>',
-	__( 'I built this plugin as a starter for client sites, including features that I use often, the code for which I repeatedly copied from my', 'tims' ),
-	esc_url( 'https://gist.github.com/ControlledChaos' ),
-	__( 'gist library', 'tims' ),
-	__( '. It is not intended to be a plug-and-play type of thing, although it can be used as such. This is more of a developer\'s tool. I have commented thouroughly on the code and documentec the files to the best of my ability. I have learned by looking at the code of others so I have kept this in mind when writing the code for this plugin.', 'tims' )
- ) ?>
+<p><?php _e( 'The software that runs this website is called WordPress. It is considered a "content management system", which means that you can update and maintain your site without having to learn to code or employing the help of an expert to add, rearrange, or remove content.', 'tims' ); ?></p>
+<p><?php _e( 'The WordPress interface before you is highly customized. It has not only been styled to match the public-facing pages, it has been pared down to supply you with only the tools that you need to maintain your portfolio. This will not only make it easier for you to find your way around it also makes the site nearly impossible to break. So do not be afraid to attempt any of the tasks in these tutorials.', 'tims' ); ?></p>
 
 <!-- Section heading -->
-<h3><?php _e( 'Approach', 'tims' ); ?></h3>
+<h3><?php _e( 'Software Updates', 'tims' ); ?></h3>
 
-<p><?php _e( 'Although this plugin comes with my business name incorporated into it, I am not trying to put my branding stink all over your project. It has to have a name so I used my own. However, since I need to rename the plugin for my clients\' websites, I have made every effort to use a simple, uniform naming system that can be quicky renamed for your project.', 'tims' ); ?></p>
-<p><?php _e( 'Not every feature included with this plugin will be needed for my projects or yours. And one big reason for writing a site-specific plugin is to include only what the site needs and eliminate the overhead of plugins and themes that offer things that you don\'t need. So why have I packed so much into this plugin? Well, I find it to be much quicker and easier to remove unnecessary code that it is to write, or even copy & paste, new code into a project. And being that you will rename this plugin and that it will update to overwrite your changes, modifications can be made ad libidum.', 'tims' ); ?></p>
-
-<!-- Section heading -->
-<h3><?php _e( 'Compatibility', 'tims' ); ?></h3>
-
-<ul class="tims_bullet-list">
-	<li><?php _e( 'This plugin was written in a WordPress 4.9+ environment with no concern for backwards compatitbility.', 'tims' ); ?></li>
-	<li><?php _e( 'This plugin was written on a local server running PHP 7.0', 'tims' ); ?></li>
-	<li><?php _e( 'The short array syntax ( "[]" rather than "array()" ) requires PHP 5.4+', 'tims' ); ?></li>
-	<li><?php _e( 'Run a modern setup and you\'ll be fine.', 'tims' ); ?></li>
-</ul>
-<?php echo sprintf(
-	'<p>%1s</p>',
-	__( 'Sample editor blocks are included in preparation for WordPress 5.0 with it\'s new user interface. Until that release, the <a href="%2s" target="_blank">Gutenberg</a> plugin is required to use the blocks.', 'tims' ),
-	esc_url( 'https://wordpress.org/plugins/gutenberg/' )
- ); ?>
-<?php echo sprintf(
-	'<p>%1s <a href="%2s" target="_blank">%3s</a> %4s <a href="%5s" target="_blank">%6s</a> %7s <a href="%8s" target="_blank">%9s</a> %10s <a href="%11s" target="_blank">%12s</a> %13s</p>',
-	__( 'For a nicer user experience, this plugin is recommended for use with', 'tims' ),
-	esc_url( 'https://www.advancedcustomfields.com/pro/' ),
-	'Advanced Custom Fields PRO',
-	__( 'or the', 'tims' ),
-	esc_url( 'https://wordpress.org/plugins/advanced-custom-fields/' ),
-	__( 'free version of ACF', 'tims' ),
-	__( 'plus the', 'tims' ),
-	esc_url( 'https://www.advancedcustomfields.com/add-ons/options-page/' ),
-	__( 'Options Page', 'tims' ),
-	__( 'addon. However, most of the ACF features are duplicated using the', 'tims' ),
-	esc_url( 'https://developer.wordpress.org/plugins/settings/settings-api/' ),
-	__( 'WordPress settings API', 'tims' ),
-	__( 'to reduce third-party dependencies.', 'tims' )
- ); ?>
-
-<!-- Section heading -->
-<h3><?php _e( 'Additional Information', 'tims' ); ?></h3>
-
-<p><?php _e( 'You can find more information, including instructions for renaming this plugin, in the help tab at the top of this page.' ); ?></p>
+<p><?php _e( 'WordPress regularly releases updated versions, typically with current security measures. These versions will be updated automatically. More major releases, such as those which add features or change the way some features work, must be installed intentionally. However, as a Controlled Chaos client these updates will be managed for you as well.', 'tims' ); ?></p>
+<p><?php _e( 'Your site is quite streamlined, not loaded with the software bloat, in the form of "plugins", installed by so many developers. There are only two WordPress plugins running your site: the one written to provide the funtionality specific to your site, and a commercial plugin called Advanced Custom Fields Pro to create the forms for content management and settings.', 'tims' ); ?></p>
+<p><?php _e( 'There are also only two WordPress themes installed: the one written to provide the framework for displaying and styling your custom content, and the most recent default WordPress theme as a backup. Again, as a Controlled Chaos client these updates will be managed for you.', 'tims' ); ?></p>

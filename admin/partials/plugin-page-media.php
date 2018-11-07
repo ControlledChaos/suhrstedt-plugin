@@ -15,7 +15,7 @@ namespace TimS_Plugin\Admin\Partials;
 if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
-<h2><?php _e( 'Media and Upload Options', 'tims' ); ?></h2>
+<h2><?php _e( 'Media Library Overview', 'tims' ); ?></h2>
 <h3><?php _e( 'Image Sizes', 'tims' ); ?></h3>
 <ul>
 	<li><?php _e( 'Add option to hard crop the medium and/or large image sizes', 'tims' ); ?></li>
