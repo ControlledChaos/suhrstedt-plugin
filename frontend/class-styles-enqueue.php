@@ -74,7 +74,7 @@ class Enqueue_Frontend_Styles {
 	public function styles() {
 
 		// Non-vendor plugin styles.
-		wp_enqueue_style( TIMS_ADMIN_SLUG, TIMS_URL . 'assets/css/frontend.css', [], TIMS_VERSION, 'all' );
+		wp_enqueue_style( TIMS_ADMIN_SLUG, TIMS_URL . 'frontend/assets/css/frontend.min.css', [], TIMS_VERSION, 'all' );
 
 		// Fancybox 3.
 		if ( get_option( 'tims_enqueue_fancybox_styles' ) ) {
