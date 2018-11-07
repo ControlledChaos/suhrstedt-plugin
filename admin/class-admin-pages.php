@@ -109,6 +109,11 @@ class Admin_Pages {
         // Change text in the excerpt metaboxes.
         add_action( 'add_meta_boxes', [ $this, 'customize_metaboxes' ], 10, 2 );
 
+        // Remove screen options on select pages.
+        add_filter( 'screen_options_show_screen', [ $this, 'remove_screen_options' ], 10, 2 );
+
+        // add_filter( 'screen_options_show_screen', '__return_false' );
+
     }
 
     /**
@@ -632,6 +637,42 @@ class Admin_Pages {
         $wp_meta_boxes[ 'page' ][ 'normal' ][ 'core' ][ 'postexcerpt' ][ 'title' ]    = 'Page Description';
         $wp_meta_boxes[ 'page' ][ 'normal' ][ 'core' ][ 'postexcerpt' ][ 'id' ]       = 'postabstract';
         $wp_meta_boxes[ 'page' ][ 'normal' ][ 'core' ][ 'postexcerpt' ][ 'callback' ] = [ $this, 'excerpt_text' ];
+
+    }
+
+    /**
+     * Removes screen options tab.
+     *
+     * @param  boolean $display_boolean
+     * @param  object $wp_screen_object
+     * @return boolean Returns false for the screens in the array.
+     */
+    function remove_screen_options( $display_boolean, $wp_screen_object ) {
+
+        $blacklist = [
+            'post.php',
+            'post-new.php',
+            'index.php',
+            'edit.php'
+        ];
+
+        if ( in_array( $GLOBALS['pagenow'], $blacklist ) ) {
+
+            $wp_screen_object->render_screen_layout();
+            $wp_screen_object->render_per_page_options();
+
+            return false;
+
+        } elseif ( in_array( $GLOBALS['pagenow'], [ 'admin.php' ] ) && ( ( $_GET['page'] == 'tims-page' ) || ( $_GET['page'] == 'tims-settings' ) ) ) {
+
+            $wp_screen_object->render_screen_layout();
+            $wp_screen_object->render_per_page_options();
+
+            return false;
+
+        }
+
+        return true;
 
     }
 
