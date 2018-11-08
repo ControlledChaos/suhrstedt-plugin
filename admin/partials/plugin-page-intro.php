@@ -12,6 +12,8 @@
  *
  * @since      1.0.0
  * @author     Greg Sweet <greg@ccdzine.com>
+ *
+ * @todo       Change language here if anything relevant changes.1
  */
 
 namespace TimS_Plugin\Admin\Partials;

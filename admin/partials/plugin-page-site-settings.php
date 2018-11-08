@@ -10,6 +10,8 @@
  *
  * @since      1.0.0
  * @author     Greg Sweet <greg@ccdzine.com>
+ *
+ * @todo       Change language here if anything relevant changes.
  */
 
 namespace TimS_Plugin\Admin\Partials;
@@ -18,14 +20,10 @@ namespace TimS_Plugin\Admin\Partials;
 if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
-<h3><?php _e( 'Settings Overview', 'tims' ); ?></h3>
-<?php echo sprintf(
-	'<p>%1s <a href="%2s">%3s</a> %4s</p>',
-	__( 'The plugin is equipped with', 'tims' ),
-	esc_url( admin_url( '?page=' . TIMS_ADMIN_SLUG . '-settings' ) ),
-	__( 'an admin page', 'tims' ),
-	__( 'for customizing the user interface of WordPress, as well as other useful features.', 'tims' )
- ); ?>
+<h2><?php _e( 'Settings Overview', 'tims' ); ?></h2>
+
+
+
 <h3><?php _e( 'Clean Up the Admin', 'tims' ); ?></h3>
 <ul>
 	<li><?php _e( 'Remove dashboard widgets: WordPress news, quick press', 'tims' ); ?></li>

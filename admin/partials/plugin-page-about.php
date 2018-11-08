@@ -111,8 +111,6 @@ $page_tabs = apply_filters( 'tims_tabs_page_about', $tabs );
 	<?php echo sprintf( '<h1 class="wp-heading-inline">%1s</h1>', esc_html__( 'How to Manage Your Website', 'tims' ) ); ?>
 	<!-- Page description -->
     <p class="description"><?php esc_html_e( 'The following instructions will help you keep your portfolio up to date and looking good.', 'tims' ); ?></p>
-	<!-- Ornamental divider -->
-	<hr class="wp-header-end">
 	<!-- Begin jQuery tabbed content -->
 	<div class="backend-tabbed-content">
 		<ul>

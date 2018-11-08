@@ -10,6 +10,8 @@
  *
  * @since      1.0.0
  * @author     Greg Sweet <greg@ccdzine.com>
+ *
+ * @todo       Change language here if anything relevant changes.
  */
 
 namespace TimS_Plugin\Admin\Partials;
@@ -18,21 +20,17 @@ namespace TimS_Plugin\Admin\Partials;
 if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
-<h3><?php _e( 'Features Overview', 'tims' ); ?></h3>
-<?php echo sprintf(
-	'<p>%1s <a href="%2s">%3s</a> %4s</p>',
-	__( 'This plugin is equipped with', 'tims' ),
-	esc_url( admin_url( 'options-general.php?page=' . TIMS_ADMIN_SLUG . '-scripts' ) ),
-	__( 'an admin page', 'tims' ),
-	__( 'for enqueueing third-party scripts included in the plugin, as well as for script loading options.', 'tims' )
- ); ?>
+<h2><?php _e( 'Features Overview', 'tims' ); ?></h2>
+
+<p><?php _e( 'Features are any project that is not a commercial: films, television shows, internet shows. These projects are displayed to website visitors by clicking on the "Features" link in the menu, and in the project showcase if that option is used (see the Site Settings tab here).', 'tims' ); ?></p>
+<p><?php _e( 'Currently the feature projects are only viewed by the public as a collection. However a template is in place for viewing features individually, with their own URLs. Contact Greg at Controlled Chaos Design if you wish to add links from the collection of features to the individual project pages.', 'tims' ); ?></p>
+
 <h3><?php _e( 'Included Vendor Scripts', 'tims' ); ?></h3>
+
 <p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
-<ul>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'Fancybox 3', 'tims' ), esc_attr( 'https://github.com/fancyapps/fancybox' ), esc_url( 'https://github.com/fancyapps/fancybox' ) ); ?>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'Slick', 'tims' ), esc_attr( 'https://github.com/kenwheeler/slick' ), esc_url( 'https://github.com/kenwheeler/slick' ) ); ?>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'Tabslet', 'tims' ), esc_attr( 'https://github.com/vdw/Tabslet' ), esc_url( 'https://github.com/vdw/Tabslet' ) ); ?>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'Sticky-kit', 'tims' ), esc_attr( 'https://github.com/leafo/sticky-kit' ), esc_url( 'https://github.com/leafo/sticky-kit' ) ); ?>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'Tooltipster', 'tims' ), esc_attr( 'https://github.com/iamceege/tooltipster' ), esc_url( 'https://github.com/iamceege/tooltipster' ) ); ?>
-	<?php echo sprintf( '<li>%1s - <a href="%2s" target="_blank">%3s</a></li>', _x( 'FitVids', 'tims' ), esc_attr( 'https://github.com/davatron5000/FitVids.js' ), esc_url( 'https://github.com/davatron5000/FitVids.js' ) ); ?>
-</ul>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
+<p><?php _e( 'UI &amp; UX JS plugins ready to use', 'tims' ); ?></p>
