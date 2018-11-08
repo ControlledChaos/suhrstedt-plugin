@@ -3,6 +3,12 @@
  * included in this file.
  */
 
+.site-plugin-wrap h2,
+.site-plugin-wrap h3 {
+	padding-bottom: 1em;
+	border-bottom: solid 1px #ccc;
+}
+
 .site-plugin-wrap p {
 	font-size: 16px;
 }
