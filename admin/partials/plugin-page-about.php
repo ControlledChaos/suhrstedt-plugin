@@ -74,7 +74,7 @@ $tabs = [
     sprintf(
         '<li><a href="%1s"><span class="dashicons dashicons-video-alt3"></span> %2s</a></li>',
         '#vimeo',
-        esc_html__( 'Vimeo', 'tims' )
+        esc_html__( 'Vimeo Videos', 'tims' )
     ),
 
 	// Features tab.

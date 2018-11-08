@@ -30,7 +30,19 @@ if ( ! defined( 'WPINC' ) ) {
 <h3><?php _e( 'Media Management', 'tims' ); ?></h3>
 
 <p><?php _e( 'Your website is equipped with various tools for managing your media library. It is highly recommended that you take full advantage of them various reasons. Some of the reasons are technical, regarding what the search engines read, but the primary reason to abide by the following is to make it easier for you to find images when they are needed.', 'tims' ); ?></p>
+<p><?php _e( 'The first thing to keep in mind for a well-curated media library is to give your media files a descriptive name prior to uploading them; the fields can be changed after upload but the file name will remain the same. So avoid uploading files with the random name given by a camera or a screenshot generator, or a name that refers to its dimensions or another website. So, for instance, if you have a screenshot of a Nissan commercial with a file name of \'screen-shot-2018-11-07\' then simply rename it something like \'nissan-trucks-01. And if you have multiple images for a film project then sequentially number them, such as \'office-space-01\', \'office-space-02\', etc.', 'tims' ); ?></p>
+
+<h4><?php _e( 'Media Uploads', 'tims' ); ?></h4>
+
+<p><?php _e( 'Images can be uploaded directly to projects via their edit screens (see the tutorials here under their respective tabs) but they can be uploaded prior to creating or editing a project. In fact, it is a good practice to upload images first to the media library then add information in the fields for each file prior to attaching them to a project.', 'tims' ); ?></p>
+<p><?php _e( 'To add media directly to the library, click on Media > Add New in the side menu. Or from the top toolbar click on New > Media.', 'tims' ); ?></p>
+<p><?php _e( 'To add images directly to a project, you will see an interface to add or remove an image in several places in the form, depending on the project type. When the button is clicked to add an image you will have the option to either upload a new image or choose an existing image from the media library.', 'tims' ); ?></p>
 
 <h4><?php _e( 'Media Types', 'tims' ); ?></h4>
 
-<p><?php _e( 'A category system is provided for filtering images and other media by type, by its use.', 'tims' ); ?></p>
+<p><?php _e( 'A category system is provided for filtering images and other media by type or by its use. Find these in the side menu under Media > Media Types. When editing media details you will see a field to add its category.', 'tims' ); ?></p>
+
+<h4><?php _e( 'Media Meta Data', 'tims' ); ?></h4>
+
+<p><?php _e( 'There are quite a few optional form fields provided for adding information about media files.', 'tims' ); ?></p>
+<p><?php _e( 'To edit these, go to the media library and click on an item. If the library is in grid view then you will see the fields in the sidebar of a popup window. If the library is in list view then you will be taken to another page where you will see the fields below the file display. There is no save button, the data entered into the fields are saved in real time.', 'tims' ); ?></p>
