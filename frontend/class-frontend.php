@@ -71,6 +71,12 @@ class Frontend {
 	 */
 	public function __construct() {
 
+		// HTML document title.
+		add_filter( 'pre_get_document_title', [ $this, 'document_title' ] );
+
+		// HTML document title separator.
+		add_filter( 'document_title_separator', [ $this, 'document_title_separator' ] );
+
 		// Deregister Dashicons for users not logged in.
 		add_action( 'wp_enqueue_scripts', [ $this, 'deregister_dashicons' ] );
 
@@ -130,6 +136,44 @@ class Frontend {
 
 		// Meta tags for SEO.
 		include_once TIMS_PATH . 'frontend/meta-tags/class-meta-tags.php';
+
+	}
+
+	/**
+	 * HTML document title.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return string
+	 */
+	public function document_title() {
+
+		if ( is_front_page() ) {
+			$title = 'Tim Suhrstedt, ASC | Director of Photography';
+		} else {
+			$title = null;
+		}
+
+		return $title;
+
+	}
+
+	/**
+	 * HTML document title separator.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return string
+	 */
+	public function document_title_separator() {
+
+		if ( is_front_page() ) {
+			$separator = null;
+		} else {
+			$separator = ' | ';
+		}
+
+		return $separator;
 
 	}
 
