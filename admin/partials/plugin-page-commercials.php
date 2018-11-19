@@ -1,6 +1,6 @@
 <?php
 /**
- * Instructions page media options output.
+ * Instructions page commercials output.
  *
  * @package    Tim_Suhrstedt
  * @subpackage Admin\Partials
@@ -18,8 +18,19 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 } ?>
 <h2><?php _e( 'Commercials Overview', 'tims' ); ?></h2>
-<h3><?php _e( 'Image Sizes', 'tims' ); ?></h3>
 
+<p><?php _e( 'Commercial projects are displayed to website visitors by clicking on the "Commercials" link in the menu, and in the project showcase if that option is used (see the Site Settings tab here). The list of commercials for administration purposes can be found from the admin menu at left.', 'tims' ); ?></p>
 
-<h3><?php _e( 'Fancybox Presentation', 'tims' ); ?></h3>
-<h3><?php _e( 'SVG Uploads', 'tims' ); ?></h3>
+<h3><?php _e( 'Adding & Editng Commercials', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+
+<h3><?php _e( 'Sorting Commercials', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+
+<h3><?php _e( 'Adding Commercials to the Showcase', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+<p><?php _e( '', 'tims' ); ?></p>
+<p><?php _e( '', 'tims' ); ?></p>

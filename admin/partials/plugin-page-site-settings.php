@@ -22,19 +22,22 @@ if ( ! defined( 'WPINC' ) ) {
 } ?>
 <h2><?php _e( 'Settings Overview', 'tims' ); ?></h2>
 
+<p><?php _e( '', 'tims' ); ?></p>
 
+<h3><?php _e( 'Theme Options', 'tims' ); ?></h3>
 
-<h3><?php _e( 'Clean Up the Admin', 'tims' ); ?></h3>
-<ul>
-	<li><?php _e( 'Remove dashboard widgets: WordPress news, quick press', 'tims' ); ?></li>
-	<li><?php _e( 'Make Menus and Widgets top level menu items', 'tims' ); ?></li>
-	<li><?php _e( 'Remove select admin menu items', 'tims' ); ?></li>
-	<li><?php _e( 'Remove WordPress logo from admin bar', 'tims' ); ?></li>
-	<li><?php _e( 'Remove access to theme and plugin editors', 'tims' ); ?></li>
-</ul>
-<h3><?php _e( 'Enchance the Admin', 'tims' ); ?></h3>
-<ul>
-	<li><?php _e( 'Add three admin bar menus', 'tims' ); ?></li>
-	<li><?php _e( 'Add custom post types to the At a Glance widget', 'tims' ); ?></li>
-	<li><?php _e( 'Custom admin footer message', 'tims' ); ?></li>
-</ul>
+<p><?php _e( '', 'tims' ); ?></p>
+
+<h3><?php _e( 'Dashboard', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+
+<h3><?php _e( 'Admin Menu', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+
+<h3><?php _e( 'Admin Pages', 'tims' ); ?></h3>
+
+<p><?php _e( '', 'tims' ); ?></p>
+<p><?php _e( '', 'tims' ); ?></p>
+<p><?php _e( '', 'tims' ); ?></p>
