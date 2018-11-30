@@ -56,7 +56,7 @@ if ( $contact_page ) {
     </header>
     <ul class="tims-dashboard-post-type-actions">
         <li>
-            <h4><?php _e( 'Features', 'tims' ); ?></h4>
+            <h4><?php _e( 'Features/TV', 'tims' ); ?></h4>
             <div class="tims-dashboard-post-type-actions-icon features-icon"><span class="dashicons dashicons-format-video"></span></div>
             <p>
                 <a href="<?php echo admin_url( 'post-new.php?post_type=tims_features' ); ?>"><?php _e( 'Add New', 'tims' ); ?></a>

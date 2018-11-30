@@ -42,7 +42,7 @@ class Suhrstedt_Features {
 
 			acf_add_local_field_group( [
 				'key'    => 'group_5948b2c4ec0dd-2',
-				'title'  => __( 'Features', 'tims' ),
+				'title'  => __( 'Features/TV', 'tims' ),
 				'fields' =>[
 					[
 						'key'               => 'field_598256325eb95',
@@ -315,7 +315,7 @@ class Suhrstedt_Features {
 					14 => 'featured_image'
 				],
 				'active'                => 1,
-				'description'           => __( 'For the Features post type.', 'tims' ),
+				'description'           => __( 'For the Features/TV post type.', 'tims' ),
 			] );
 
 		endif;

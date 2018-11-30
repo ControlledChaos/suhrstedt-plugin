@@ -81,7 +81,7 @@ $tabs = [
     sprintf(
         '<li><a href="%1s"><span class="dashicons dashicons-format-video"></span> %2s</a></li>',
         '#features',
-        esc_html__( 'Features', 'tims' )
+        esc_html__( 'Features/TV', 'tims' )
 	),
 
 	// Commercials tab.
