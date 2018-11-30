@@ -670,7 +670,7 @@ class Admin_Pages {
 
             return false;
 
-        } elseif ( in_array( $GLOBALS['pagenow'], [ 'options-general.php' ] ) && ( $_GET['page'] == 'tims-scripts' ) ) {
+        } elseif ( in_array( $GLOBALS['pagenow'], [ 'options-general.php' ] ) && ( ( $_GET['page'] == 'tims-scripts' ) || ( $_GET['page'] == 'sort-order-settings' ) || ( $_GET['page'] == 'posts-per-page' ) ) ) {
 
             $wp_screen_object->render_screen_layout();
             $wp_screen_object->render_per_page_options();
