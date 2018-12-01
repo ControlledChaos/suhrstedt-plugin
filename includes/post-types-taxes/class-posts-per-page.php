@@ -235,13 +235,10 @@ class Posts_Per_Page {
 		?>
 		<div class="wrap">
 			<div class="icon32" id="icon-options-general"></div>
-			<h2><?php _e( 'Posts Per Page', 'tims' ); ?></h2>
-			<h3><?php _e( 'Overview', 'tims' ); ?></h3>
-			<p style="margin-left:12px;max-width:640px;"><?php _e( 'The settings below allow you to specify how many posts per page are displayed to readers depending on the which type of page is being viewed.' ); ?></p>
-			<p style="margin-left:12px;max-width:640px;"><?php _e( 'Different values can be set for your your main view, category views, tag views, author views, archive views, search views, and
-			views for custom post types. For each of these views, a different setting is available for the first page and subsequent pages. In addition to these, a default value is available that
-			can be set for any other pages not covered by this.', 'tims' ); ?></p>
-			<p style="margin-left:12px;max-width:640px;"><?php _e( 'The initial value used on activation was pulled from the setting <em>Blog Pages show at most</em> found in the', 'tims' ); ?> <a href="<?php echo site_url( '/wp-admin/options-reading.php' ); ?>" title="Reading Settings"><?php _e( 'Reading Settings', 'tims' ); ?></a></p>
+			<h1><?php _e( 'Projects Per Page', 'tims' ); ?></h1>
+			<p><?php _e( 'The settings below allow you to specify how many projects per page are displayed to visitors depending on the which type of page is being viewed.' ); ?></p>
+			<p><?php _e( 'Different values can be set for your project types. For each of these views, a different setting is available for the first page and subsequent pages.', 'tims' ); ?></p>
+			<p><?php _e( 'The initial value used is pulled from the setting <em>Blog Pages show at most</em> found in the', 'tims' ); ?> <a href="<?php echo site_url( '/wp-admin/options-reading.php' ); ?>" title="Reading Settings"><?php _e( 'Reading Settings', 'tims' ); ?></a></p>
 			<form method="post" action="options.php">
 				<?php
 					settings_fields( 'tims_ppp_options' );
@@ -304,11 +301,11 @@ class Posts_Per_Page {
 	 */
 	public function output_main_section_text() {
 		?>
-		<h3><?php _e( 'Main Settings', 'tims' ); ?></h3>
-		<p style="max-width:640px;margin-left:12px;"><?php _e( 'This section allows you to modify page view types that are
+		<h2><?php _e( 'Main Settings', 'tims' ); ?></h2>
+		<p><?php _e( 'This section allows you to modify page view types that are
 		associated with WordPress by default. When an option is set to 0, it will not modify any page requests for
 		that view and will instead allow default values to pass through.', 'tims' ); ?></p>
-		<p style="max-width:460px;margin-left:12px;"><strong><?php _e( 'Please Note', 'tims' ); ?>:</strong>
+		<p><strong><?php _e( 'Please Note', 'tims' ); ?>:</strong>
 		<em><?php _e( 'For each setting, the box on the <strong>LEFT</strong> controls the the number of posts displayed on	the first page of that view while
 		the box on the <strong>RIGHT</strong> controls the number of posts seen on pages 2, 3, 4, etc... of that view.', 'tims' ); ?></em></p>
 		<?php
@@ -324,11 +321,8 @@ class Posts_Per_Page {
 	public function output_custom_section_text() {
 
 		?>
-		<h3><?php _e( 'Custom Post Type Specific Settings', 'tims' ); ?></h3>
-		<p style="max-width:640px;margin-left:12px;"><?php _e( 'This section contains a list of all of your registered custom post
-		types. In order to not conflict with other plugins or themes, these are set to 0 by default. When an option is
-		set to 0, it will not modify any page requests for that custom post type archive. For Custom Posts Per Page to
-		control the number of posts to display, these will need to be changed.', 'custom-post-per-page' ); ?></p>
+		<h2><?php // _e( 'Custom Post Type Specific Settings', 'tims' ); ?></h2>
+		<p><?php // _e( 'This section contains a list of all of your registered custom post types. In order to not conflict with other plugins or themes, these are set to 0 by default. When an option is set to 0, it will not modify any page requests for that custom post type archive. For Custom Posts Per Page to control the number of posts to display, these will need to be changed.', 'custom-post-per-page' ); ?></p>
 		<?php
 
 	}
@@ -366,9 +360,11 @@ class Posts_Per_Page {
 
 			?>
 			<tr>
-				<td><?php echo $this_post_data->labels->name; ?></td>
-				<td><input id="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]" name="tims_ppp_options[<?php echo esc_attr( $p ); ?>_count]" size="10" type="text" value="<?php echo esc_attr( $tims_ppp_options[ $p . '_count' ] ); ?>" />
-					&nbsp;<input id="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]" name="tims_ppp_options[<?php echo esc_attr( $p ); ?>_count_paged]" size="10" type="text" value="<?php echo esc_attr( $tims_ppp_options[ $p . '_count_paged' ] ); ?>" />
+				<th><?php echo $this_post_data->labels->name; ?></th>
+				<td>
+					<label for="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]"><strong><?php _e( 'First Page:', 'tims' ); ?></strong> </label><input id="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]" name="tims_ppp_options[<?php echo esc_attr( $p ); ?>_count]" size="10" type="text" value="<?php echo esc_attr( $tims_ppp_options[ $p . '_count' ] ); ?>" />
+					&nbsp;
+					<label for="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]"><strong><?php _e( 'Subsequent Pages:', 'tims' ); ?></strong></label> <input id="tims_ppp_post_type_count[<?php echo esc_attr( $p ); ?>]" name="tims_ppp_options[<?php echo esc_attr( $p ); ?>_count_paged]" size="10" type="text" value="<?php echo esc_attr( $tims_ppp_options[ $p . '_count_paged' ] ); ?>" />
 				</td>
 			</tr>
 			<?php
